@@ -9,6 +9,6 @@ module full_adder(sum,cy_out,cy_in,a,b);
     input cy_in,a,b;
     output cy_out,sum;
     assign sum = a^b^cy_in;
-    assign cy_out = (a&b) | (b&c) | (c&d);
+    assign cy_out = (a&b) | (b&c) | (c&b);
 
 endmodule
